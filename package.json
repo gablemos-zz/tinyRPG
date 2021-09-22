@@ -2,11 +2,14 @@
   "name": "tinyRPG",
   "version": "1.0.0",
   "description": "Discord Bot",
-  "main": "src/exitindex.js",
+  "main": "src/index.js",
   "dependencies": {
+    "discord.js": "^13.1.0",
     "nodemon": "^2.0.12"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^7.32.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon",
