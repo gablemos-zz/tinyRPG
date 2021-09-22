@@ -1,11 +1,11 @@
-const { Client, Intents } = require('discord.js');
-const { token } = require('./config/config.json');
+const Discord = require('discord.js');
+const { token } = require('./config/env.json');
 
 // Create a new client instance
-const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
+const client = new Discord.Client();
 
 // When the client is ready, run this code (only once)
-client.once('ready', () => {
+client.on('ready', () => {
 	console.log('Ready!');
 });
 
